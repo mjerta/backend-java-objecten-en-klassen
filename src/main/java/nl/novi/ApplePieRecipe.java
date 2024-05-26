@@ -4,10 +4,11 @@ import java.util.ArrayList;
 
 public class ApplePieRecipe {
   // Note: I'm using Arraylist and not List. I know its not a common practice. But this seems to be debatable.
-  private ArrayList<Ingredient> listOfInstances = new ArrayList<>();
-  private ArrayList<String> allStepsOfRecipe = new ArrayList<>();
+  private final ArrayList<Ingredient> listOfInstances = new ArrayList<>();
+  private final ArrayList<String> allStepsOfRecipe = new ArrayList<>();
+  private String title = "Apple Pie";
 
-  Ingredient roomBoter = new Ingredient(200, "ongzouten roomboter", "gram");
+  Ingredient roomBoter = new Ingredient(200, "ongezouten roomboter", "gram");
   Ingredient bastardSuiker = new Ingredient(200, "witte bastard suiker", "gram");
   Ingredient bakMeel = new Ingredient(400, "zelrijzend bakmeel", "gram");
   Ingredient ei = new Ingredient(1, "ei", "stuk(s");
@@ -37,7 +38,6 @@ public class ApplePieRecipe {
     this.listOfInstances.add(this.kristalSuiker);
     this.listOfInstances.add(this.kaneel);
     this.listOfInstances.add(this.paneerMeel);
-
   }
 
   public void setAllSteps() {
@@ -63,6 +63,11 @@ public class ApplePieRecipe {
     allStepsOfRecipe.add((
         "Zet de taart iets onder het midden van de oven. Bak de taart in 60 minuten op 170 graden Celsius (boven en onderwarmte) gaar en " +
             "goudbruin."));
+  }
+
+  // The following method is just present the title of the recipe
+  public String getTitle() {
+    return title;
   }
 
   public void printIngredients() {

@@ -6,9 +6,7 @@ public class Ingredient {
   private String name;
   private String unit;
 
-  public Ingredient(
-
-  ) {
+  public Ingredient() {
   }
 
   public Ingredient(double amount, String name, String unit) {
