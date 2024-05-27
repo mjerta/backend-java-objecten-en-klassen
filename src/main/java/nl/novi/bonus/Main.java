@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) {
-    // Opdracht1: Film
+    // Opdracht 1: Film
     System.out.println("Opdracht1: Film");
     System.out.println();
     String titleMovie = "The Terminator";
@@ -20,8 +20,9 @@ public class Main {
     theTerminator.generateSummary();
     System.out.println();
 
-    // Opdracht2: winkel
+    // Opdracht 2: winkel
     System.out.println("Opdracht2: Winkel");
+    System.out.println();
     Shop shop = new Shop();
     shop.addProduct("Chocolatebar", 6);
     shop.printOutStock();
@@ -35,12 +36,22 @@ public class Main {
     System.out.println();
     System.out.println("Updated stock list: ");
     shop.printOutStock();
+    System.out.println();
 
     // Opdracht 3: Bedrijf
     System.out.println("Opdracht3: Bedrijf");
+    System.out.println();
     Manager companyManager = new Manager("Maarten Postma", 33);
     Company company = new Company("mpdev", companyManager);
     company.printOutDetailsCompany();
+    System.out.println();
+
+    // Opdracht 4: Dierentuin
+    System.out.println("Opdracht4: Dierentuin");
+    System.out.println();
+    Zoo zoo = new Zoo();
+
+    // Opdracht 5: Auto
 
   }
 

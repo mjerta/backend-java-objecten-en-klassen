@@ -66,13 +66,13 @@ public class MealSaladRecipe {
   }
 
   public void printIngredients() {
-    for (Ingredient ingredient : listOfInstances) {
+    for (Ingredient ingredient : this.listOfInstances) {
       System.out.println(ingredient.getAmount() + " " + ingredient.getUnit() + " " + ingredient.getName());
     }
   }
 
   public void printOutStepsOfRecipe() {
-    for (String step : allStepsOfRecipe) {
+    for (String step : this.allStepsOfRecipe) {
       System.out.println(step);
     }
   }
