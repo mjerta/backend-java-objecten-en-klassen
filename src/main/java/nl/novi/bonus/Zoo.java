@@ -26,7 +26,7 @@ public class Zoo {
     for (Animal animal : this.listAnimals) {
       System.out.println(
           "The " + animal.getName() + " lives in the " + animal.getStay() + ", eats " + animal.getFood() + " and is part of the " +
-              animal.getSpecies() + "species");
+              animal.getSpecies() + "species" + ".");
       System.out.println();
     }
   }

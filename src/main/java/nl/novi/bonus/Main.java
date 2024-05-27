@@ -49,9 +49,29 @@ public class Main {
     // Opdracht 4: Dierentuin
     System.out.println("Opdracht4: Dierentuin");
     System.out.println();
-    Zoo zoo = new Zoo();
+    Zoo zoo = new Zoo(); //  The constructor will by default print all details.
+    System.out.println();
 
     // Opdracht 5: Auto
+    System.out.println("Opdracht 5: Auto");
+    Engine v8 = new Engine(2.0, 4.2);
+    WheelType michellin = new WheelType("michelin", 25, 40);
+
+    Car toyota = new Car.Builder()
+        .engineCapacity(2.5)
+        .color("Red")
+        .fuel("Petrol")
+        .brand("Toyota")
+        .engine(v8)
+        .wheelType(michellin)
+        .build();
+
+    toyota.printOutCarDetails();
+    System.out.println();
+    System.out.println("We are going for a drive!");
+    toyota.setAmountOfFuel(40);
+    toyota.setAmountOfKilometers(60);
+    toyota.printOutFuelAmmount();
 
   }
 
