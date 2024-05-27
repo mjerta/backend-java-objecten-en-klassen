@@ -20,8 +20,19 @@ public class Main {
     System.out.println();
 
     System.out.println("Opdracht2: winkel");
-    // Methode but the same time also an constructor to add a new product
-    Store apple = new Store("Apple", 3);
+    Shop shop = new Shop();
+    shop.addProduct("Chocolatebar", 6);
+    shop.printOutStock();
+    System.out.println();
+    shop.sellProduct("cola", 5);
+    System.out.println();
+    System.out.println("Updated stock list: ");
+    shop.printOutStock();
+    System.out.println();
+    shop.sellProduct("chocolatebar", 5);
+    System.out.println();
+    System.out.println("Updated stock list: ");
+    shop.printOutStock();
   }
 
 }
