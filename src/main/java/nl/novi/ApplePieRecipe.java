@@ -1,11 +1,12 @@
 package nl.novi;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ApplePieRecipe {
   // Note: I'm using Arraylist and not List. I know its not a common practice. But this seems to be debatable.
-  private final ArrayList<Ingredient> listOfInstances = new ArrayList<>();
-  private final ArrayList<String> allStepsOfRecipe = new ArrayList<>();
+  private final List<Ingredient> listOfInstances = new ArrayList<>();
+  private final List<String> allStepsOfRecipe = new ArrayList<>();
   private String title = "Apple Pie";
 
   Ingredient roomBoter = new Ingredient(200, "ongezouten roomboter", "gram");
